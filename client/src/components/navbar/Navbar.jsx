@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, ChevronDown, ChevronRight, Search } from "lucide-react";
+import { softwareCategories } from "../../text/navbarText/navBarText";
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,71 +8,12 @@ const Navbar = () => {
 	const [isSaaSOpen, setSaaSOpen] = useState(false);
 	const [expandedCategory, setExpandedCategory] = useState(null);
 
-	const softwareCategories = [
-		{
-			title: "ERP",
-			href: "#",
-			subCategories: ["Enterprise ERP", "Small Business ERP", "Cloud ERP"],
-		},
-		{
-			title: "Marketing",
-			href: "#",
-			subCategories: ["Email Marketing", "Social Media", "Analytics"],
-		},
-		{
-			title: "Security",
-			href: "#",
-			subCategories: [
-				"Endpoint Security",
-				"Network Security",
-				"Cloud Security",
-			],
-		},
-		{
-			title: "Design",
-			href: "#",
-			subCategories: ["Graphic Design", "UI/UX Design", "3D Design"],
-		},
-		{
-			title: "Analytics",
-			href: "#",
-			subCategories: [
-				"Business Intelligence",
-				"Data Visualization",
-				"Predictive Analytics",
-			],
-		},
-		{
-			title: "Content Management",
-			href: "#",
-			subCategories: ["CMS", "Document Management", "Digital Asset Management"],
-		},
-		{
-			title: "Collaboration & Productivity",
-			href: "#",
-			subCategories: [
-				"Project Management",
-				"Team Communication",
-				"Task Management",
-			],
-		},
-		{
-			title: "Human Resources",
-			href: "#",
-			subCategories: ["HRMS", "Payroll", "Recruitment"],
-		},
-		{
-			title: "All Categories",
-			href: "#",
-		},
-	];
-
 	const handleCategoryHover = (index) => {
 		setExpandedCategory(index);
 	};
 
 	return (
-		<nav className="w-full bg-white p-4">
+		<nav className="w-full bg-white px-4 ">
 			<div className="container">
 				<div className="flex justify-between items-center h-16">
 					{/* Logo */}
