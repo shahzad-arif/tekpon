@@ -71,18 +71,18 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="w-full bg-white">
+		<nav className="w-full bg-white p-4">
 			<div className="max-w-7xl mx-auto px-4">
 				<div className="flex justify-between items-center h-16">
 					{/* Logo */}
-					<div className="flex-shrink-0">
-						<div className="h-8 w-8 bg-black rounded-lg flex items-center justify-center">
-							<span className="text-white font-bold text-xl">t</span>
-						</div>
-					</div>
 
 					{/* Desktop Navigation */}
 					<div className="hidden md:flex items-center space-x-8">
+						<div className="flex-shrink-0">
+							<div className="h-8 w-8 bg-black rounded-lg flex items-center justify-center">
+								<span className="text-white font-bold text-xl">t</span>
+							</div>
+						</div>
 						<div className="relative group">
 							<button
 								onClick={() => setSoftwareOpen(!isSoftwareOpen)}
@@ -185,17 +185,24 @@ const Navbar = () => {
 					</div>
 
 					{/* Mobile menu button */}
-					<div className="md:hidden">
-						<button
-							onClick={() => setIsMenuOpen(!isMenuOpen)}
-							className="text-gray-700 hover:text-gray-900"
-						>
-							{isMenuOpen ? (
-								<X className="h-6 w-6" />
-							) : (
-								<Menu className="h-6 w-6" />
-							)}
-						</button>
+					<div className="md:hidden w-full">
+						<div className="flex justify-between">
+							<div className="flex-shrink-0">
+								<div className="h-8 w-8 bg-black rounded-lg flex items-center justify-center">
+									<span className="text-white font-bold text-xl">t</span>
+								</div>
+							</div>
+							<button
+								onClick={() => setIsMenuOpen(!isMenuOpen)}
+								className="text-gray-700 hover:text-gray-900"
+							>
+								{isMenuOpen ? (
+									<X className="h-6 w-6" />
+								) : (
+									<Menu className="h-6 w-6" />
+								)}
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
