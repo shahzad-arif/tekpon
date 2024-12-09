@@ -2,7 +2,11 @@
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ["Urbanist", "sans-serif"], // Include Urbanist as the primary font
+			},
+		},
 	},
 	plugins: [],
 };
