@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const AnimatedText = () => {
-	const words = ["deals", "tools", "insights", "software"];
+	const words = ["deals", "tools", "insights"];
 	const [currentWordIndex, setCurrentWordIndex] = useState(0);
 	const [currentText, setCurrentText] = useState("");
 	const [isDeleting, setIsDeleting] = useState(false);
@@ -41,7 +41,7 @@ const AnimatedText = () => {
 	}, [currentText, isDeleting, currentWordIndex]);
 
 	return (
-		<span className="relative  md:min-w-[6.5ch] justify-start inline-flex left-[30%] md:left-0 ">
+		<span className="relative  md:min-w-[6.5ch] justify-start inline-flex  ">
 			<span className="text-custom-gradient whitespace-nowrap">
 				{currentText}
 				<span className="animate-pulse">|</span>
