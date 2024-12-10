@@ -7,9 +7,9 @@ const AnimatedText = () => {
 	const [isDeleting, setIsDeleting] = useState(false);
 
 	useEffect(() => {
-		const typingSpeed = 30; // Faster typing speed
-		const deletingSpeed = 20; // Faster deleting speed
-		const pauseTime = 3000; // Shorter pause after completing a word
+		const typingSpeed = 60; // Faster typing speed
+		const deletingSpeed = 60; // Faster deleting speed
+		const pauseTime = 4000; // Shorter pause after completing a word
 
 		const getCurrentWord = () => words[currentWordIndex];
 

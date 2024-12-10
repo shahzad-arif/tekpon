@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SoftwareCard from "../cards/SoftwareCard";
 
 import freshdeskIcon from "/Freshdesk-favicon.webp";
 
 const PopularSoftwareCategories = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+   const getCategoryName = () => {
+    return activeIndex !== null
+      ? categorySidebarItems[activeIndex]
+      : "Help Desk"; // Default if no category is selected
+  };
+
   const categories = [
     {
       icon: freshdeskIcon,
@@ -24,7 +30,7 @@ const PopularSoftwareCategories = () => {
     {
       icon: freshdeskIcon,
       title: "Freshdesk",
-      tekponScore: 8.9,
+      tekponScore: 6,
     },
     {
       icon: freshdeskIcon,
@@ -87,16 +93,17 @@ const PopularSoftwareCategories = () => {
                   icon={category.icon}
                   title={category.title}
                   tekponScore={category.tekponScore}
+                  activeIndex={activeIndex} // Pass activeIndex to each card
+                  index={index}
                 />
               ))}
             </div>
-
             <div className="text-center mt-14">
               <a
                 href="#"
                 className="text-purple-600 font-medium text-xl hover:text-purple-800 underline"
               >
-                See All Help Desk Software
+                See All {getCategoryName()} Software
               </a>
             </div>
           </div>
