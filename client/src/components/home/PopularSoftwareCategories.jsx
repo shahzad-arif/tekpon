@@ -55,7 +55,7 @@ const PopularSoftwareCategories = () => {
 	];
 
 	return (
-		<div className="container bg-gray-100 py-8 md:py-12">
+		<div className=" bg-gray-100 py-8 md:py-12">
 			<div className=" mx-auto px-4 md:px-6 lg:px-20">
 				<h2 className="text-2xl md:text-4xl font-bold mb-4 text-center">
 					Popular Software Categories
@@ -65,7 +65,7 @@ const PopularSoftwareCategories = () => {
 				</h2>
 				<div className="flex flex-col lg:flex-row items-start justify-center space-y-6 lg:space-y-0 lg:space-x-6">
 					{/* Sidebar */}
-					<div className="w-full lg:w-2/5  bg-gray-100  xl:w-1/5">
+					<div className="w-full lg:w-[40%] bg-gray-100  ">
 						<ul className="grid grid-cols-2 lg:grid-cols-1 gap-2 p-4">
 							{categorySidebarItems.map((item, index) => (
 								<li

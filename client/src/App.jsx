@@ -10,6 +10,7 @@ import TrustedOrganizations from "./components/home/TrustedOrganizaitons";
 import PopularSoftwareCategories from "./components/home/PopularSoftwareCategories";
 import CompaniesTestomonial from "./components/home/CompaniesTestomonial";
 import AllSoftwareCategories from "./components/home/AllSoftwareCategories";
+import FAQ from "./components/home/FAQ";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
 			<PopularSoftwareCategories />
 			<CompaniesTestomonial />
 			<AllSoftwareCategories />
+			<FAQ />
 			<Awards />
 			<Footer />
 		</>
