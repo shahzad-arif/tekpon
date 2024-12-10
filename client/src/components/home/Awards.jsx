@@ -3,7 +3,7 @@ import React from "react";
 const Awards = () => {
 	return (
 		<div className="mb-14">
-			<div className="relative bg-gradient-to-b from-blue-600 to-indigo-800 py-16 px-4 min-h-[600px] flex flex-col items-center justify-center text-white text-center">
+			<div className="relative color-custom-gradient py-16 px-4 min-h-[600px] flex flex-col items-center justify-center text-white text-center">
 				{/* Decorative Laurels */}
 				<div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl">
 					<div className="relative">
@@ -11,7 +11,7 @@ const Awards = () => {
 						<img
 							src="https://media.tekpon.com/design/laurels.svg"
 							alt=""
-							className="absolute left-4 md:left-8 top-1/4 transform -translate-y-1/2 w-16 md:w-24 lg:w-32 opacity-20"
+							className="absolute left-4 md:left-8 top-1/4 transform -translate-y-1/2 w-16 md:w-24 lg:w-32 opacity-50"
 						/>
 						{/* Right Laurel */}
 						<img
