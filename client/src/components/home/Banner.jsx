@@ -5,9 +5,9 @@ const Banner = () => {
 	return (
 		<section className="bg-gradient-to-br from-white to-blue-50 min-h-screen flex flex-col justify-center items-center px-4 py-2 text-center">
 			{/* Logo */}
-			<div className="mb-6  self-center">
+			<div className="mb-4  self-center">
 				<img
-					src="/SoftwareCoverage.webp"
+					src="/SoftwareCoverage.png"
 					alt="SoftwareCoverage"
 					className="h-28"
 				/>

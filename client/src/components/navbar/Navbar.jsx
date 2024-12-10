@@ -20,7 +20,7 @@ const Navbar = () => {
 					<div className="hidden xl:flex items-center space-x-8">
 						<div className="flex-shrink-0">
 							<div className="w-52 rounded-lg mb-1 flex items-center justify-center">
-								<img src="/SoftwareCoverage.webp" alt="SoftwareCoverage" />
+								<img src="/SoftwareCoverage.png" alt="SoftwareCoverage" />
 							</div>
 						</div>
 						<div className="relative group">
@@ -122,7 +122,7 @@ const Navbar = () => {
 						<div className="flex justify-between">
 							<div className="flex-shrink-0">
 								<div className="w-52 rounded-lg mb-1 flex items-center justify-center">
-									<img src="/SoftwareCoverage.webp" alt="SoftwareCoverage" />
+									<img src="/SoftwareCoverage.png" alt="SoftwareCoverage" />
 								</div>
 							</div>
 							<button
