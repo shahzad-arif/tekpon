@@ -5,6 +5,29 @@ const Footer = () => {
 	return (
 		<footer className="bg-white">
 			<div className="container">
+				{/* Review Card - New Section */}
+				<div className="flex w-full justify-center px-4 md:px-20 mb-12">
+					<div className="bg-gradient-to-r from-teal-500 to-purple-700 rounded-lg p-8 text-center  ">
+						<h2 className="text-3xl font-bold text-white mb-2">
+							Want to Help Others?
+						</h2>
+						<h3 className="text-2xl font-bold text-white mb-4">
+							Write a Review!
+						</h3>
+						<p className="text-white mb-2">
+							Every review you write helps clarify choices for everyone.
+						</p>
+						<p className="text-white mb-2">
+							Sign in or sign up to share your software experiences and
+							insights.
+						</p>
+						<p className="text-white mb-6">Let's rise by lifting others!</p>
+						<button className="bg-white text-blue-600 px-8 py-3 rounded-md hover:bg-gray-100 transition-colors font-semibold">
+							Sign Up / Sign In
+						</button>
+					</div>
+				</div>
+
 				{/* Menu sections */}
 				<div className="grid grid-cols-1 md:grid-cols-10 mb-12 md:mx-20">
 					{/* Top section with logo and address */}
@@ -14,7 +37,7 @@ const Footer = () => {
 								<img src="/tekpon-r.webp" alt="Tekpon" className="h-8" />
 							</div>
 
-							<address className="not-italic text-gray-600  md:text-left">
+							<address className="not-italic text-gray-600 md:text-left">
 								<p className="mb-2">651 N Broad St., Suite 206</p>
 								<p className="mb-2">Middletown, 19709</p>
 								<p>DE, United States</p>

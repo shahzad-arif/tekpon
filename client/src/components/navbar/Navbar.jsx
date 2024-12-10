@@ -98,19 +98,21 @@ const Navbar = () => {
 					</div>
 
 					{/* Search, Get Listed, and Sign Up buttons */}
-					<div className="hidden lg:flex items-center space-x-8">
+					<div className="hidden lg:flex items-center gap-6">
 						<div className="relative">
 							<input
 								type="text"
 								placeholder="Search ..."
-								className="searchBar"
+								className="w-64 px-4 py-2.5 rounded-xl border border-black focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder:text-gray-500 text-lg"
 							/>
-
-							<Search className="absolute right-3 top-2.5 h-5 w-5 text-black" />
+							<Search className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-500" />
 						</div>
-						<div className="h-8 w-px bg-gray-600"></div>
-						<button className="navbarBtnIndigo ">Get Listed</button>
-						<button className="navbarBtnEndWithGradient ">
+
+						<div className="lg:h-8 lg:w-px lg:bg-gray-300"></div>
+
+						<button className="navbarBtnIndigo">Get Listed</button>
+
+						<button className="navbarBtnEndWithGradient">
 							Sign Up/Sign In
 						</button>
 					</div>
@@ -234,12 +236,12 @@ const Navbar = () => {
 							</div>
 						</div>
 
-						<div className="p-3 space-y-2">
+						<div className="p-3 space-y-2 w-full">
 							<button className="navbarBtnEnd border border-indigo-600 rounded-lg hover:bg-indigo-50">
 								Get Listed
 							</button>
 							<button className="navbarBtnEndWithGradient">
-								Sign Up / Sign In
+								Sign Up/Sign In
 							</button>
 						</div>
 					</div>
