@@ -9,6 +9,7 @@ import Awards from "./components/home/Awards";
 import TrustedOrganizations from "./components/home/TrustedOrganizaitons";
 import PopularSoftwareCategories from "./components/home/PopularSoftwareCategories";
 import CompaniesTestomonial from "./components/home/CompaniesTestomonial";
+import AllSoftwareCategories from "./components/home/AllSoftwareCategories";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -17,9 +18,10 @@ function App() {
 		<>
 			<Navbar />
 			<Banner />
-			<TrustedOrganizations/>
-			<PopularSoftwareCategories/>
-			<CompaniesTestomonial/>
+			<TrustedOrganizations />
+			<PopularSoftwareCategories />
+			<CompaniesTestomonial />
+			<AllSoftwareCategories />
 			<Awards />
 			<Footer />
 		</>
