@@ -31,7 +31,7 @@ const socialIcons = [
 
 const menuItems = {
 	Company: ["About Us", "Contact", "F.A.Q.", "Methodology"],
-	Resources: ["Tekpon Pricing", "All Software", "Press", "Deals", "Events"],
+	Resources: ["Software Coverage Pricing", "All Software", "Press", "Deals", "Events"],
 	Policies: [
 		"Cookies Policy",
 		"Privacy Policy",
