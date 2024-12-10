@@ -106,7 +106,7 @@ const Navbar = () => {
 								className="searchBar"
 							/>
 
-							<Search className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
+							<Search className="absolute right-3 top-2.5 h-5 w-5 text-black" />
 						</div>
 						<div className="h-8 w-px bg-gray-600"></div>
 						<button className="navbarBtnIndigo ">Get Listed</button>

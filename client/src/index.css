@@ -3,35 +3,38 @@
 @tailwind utilities;
 
 .container {
-	@apply max-w-7xl   py-2 px-2;
+  @apply max-w-7xl py-2 px-1 
+		   lg:px-4 lg:py-1 
+		   xl:px-4 xl:py-1 
+		   2xl:max-w-[1920px] 2xl:px-4 2xl:py-1;
 }
 
 .navbarBtn {
-	@apply flex items-center space-x-1 text-gray-700 hover:text-gray-900 text-xl;
+  @apply flex items-center space-x-1 text-gray-700 hover:text-gray-900 text-xl;
 }
 
 .navbarBtnIndigo {
-	@apply inline-block w-full  items-center space-x-1 text-indigo-600 hover:text-gray-900 text-xl border border-black hover:bg-gray-500 p-2 rounded-lg;
+  @apply inline-block w-full  items-center space-x-1 text-indigo-600 hover:text-gray-900 text-xl border border-black hover:bg-gray-500 p-2 rounded-lg;
 }
 
 .verticalDivider {
-	@apply border-t border-black my-4;
+  @apply border-t border-black my-4;
 }
 .navBarText {
-	@apply text-[30.4px];
+  @apply text-[30.4px];
 }
 
 .searchBar {
-	@apply w-64 px-4 py-2 rounded-xl border border-black focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder:text-xl;
+  @apply w-64 px-4 py-2 rounded-xl border border-black focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder:text-xl;
 }
 
 .navbarBtnEnd {
-	@apply w-full px-2 py-2 mx-4 text-indigo-600;
+  @apply w-full px-2 py-2 mx-4 text-indigo-600;
 }
 
 .dropdownText {
-	@apply block px-4 py-2 text-xl text-gray-700 hover:bg-gray-50 hover:text-indigo-600;
+  @apply block px-4 py-2 text-xl text-gray-700 hover:bg-gray-50 hover:text-indigo-600;
 }
 .navbarBtnEndWithGradient {
-	@apply w-full  py-2  text-white rounded-lg bg-gradient-blue-purple hover:opacity-90;
+  @apply w-full  py-2  text-white rounded-lg bg-gradient-blue-purple hover:opacity-90;
 }
