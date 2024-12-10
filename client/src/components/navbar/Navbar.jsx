@@ -236,7 +236,7 @@ const Navbar = () => {
 							</div>
 						</div>
 
-						<div className="p-3 space-y-2 w-full">
+						<div className="flex flex-col p-2 space-y-2 w-full">
 							<button className="navbarBtnEnd border border-indigo-600 rounded-lg hover:bg-indigo-50">
 								Get Listed
 							</button>

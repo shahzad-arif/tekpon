@@ -19,7 +19,7 @@ const TrustedOrganizations = () => {
 	];
 
 	return (
-		<div className="mt-20 mb-20">
+		<div className="container mt-20 mb-20">
 			<div className="text-center text-3xl text-gray-800">
 				<p>Trusted by the world’s leading organizations</p>
 			</div>

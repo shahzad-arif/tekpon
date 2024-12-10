@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
+* {
 	scrollbar-width: none;
 }
 
@@ -26,7 +25,7 @@
 }
 
 .navbarBtnEnd {
-	@apply w-full px-2 py-2 mx-4 text-indigo-600;
+	@apply w-full px-2 py-2  text-indigo-600;
 }
 
 .dropdownText {
@@ -35,9 +34,12 @@
 
 .navbarBtnEndWithGradient {
 	@apply px-6 py-2.5 text-lg font-extrabold text-white rounded-lg hover:opacity-90 transition-opacity duration-200;
-	background: linear-gradient(90deg, rgba(5, 247, 148, 1) 0%, rgba(17, 139, 214, 1) 100%);
-  }
-  
+	background: linear-gradient(
+		90deg,
+		rgba(5, 247, 148, 1) 0%,
+		rgba(17, 139, 214, 1) 100%
+	);
+}
 
 .navbarBtnIndigo {
 	@apply px-6 py-2.5 text-lg text-[] hover:text-gray-900  border border-gray-300 hover:border-gray-400 rounded-lg transition-colors duration-200;
@@ -48,11 +50,19 @@
 }
 
 .text-custom-gradient {
-	background: linear-gradient(90deg, rgba(5, 247, 148, 1) 0%, rgba(17, 139, 214, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(5, 247, 148, 1) 0%,
+		rgba(17, 139, 214, 1) 100%
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  }
-  
-  .color-custom-gradient{
-	background: linear-gradient(90deg, rgba(5, 247, 148, 1) 0%, rgba(17, 139, 214, 1) 100%);
-  }
+}
+
+.color-custom-gradient {
+	background: linear-gradient(
+		90deg,
+		rgba(5, 247, 148, 1) 0%,
+		rgba(17, 139, 214, 1) 100%
+	);
+}
