@@ -2,17 +2,18 @@ import React from "react";
 
 const SoftwareCard = ({ icon, title, tekponScore }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden mt-4 px-4 py-6 max-w-sm mx-auto">
-      <div className="flex items-center space-x-4">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden mt-2 px-4 py-6 max-w-sm mx-2">
+      <div className="flex items-center space-x-8 -my-4">
         {/* Icon */}
         <div>
-          <img src={icon} alt={title} className="h-16 w-16" />
+          <img src={icon} alt={title} className="h-22 w-22" />
         </div>
 
         {/* Title and Tekpon Score */}
-        <div className="flex-grow">
-          <h3 className="text-xl font-bold mb-1">{title}</h3>
-          <p className="text-gray-500 mb-2">Tekpon Score: {tekponScore}</p>
+        <div>
+          <h3 className="text-custom-gradient text-xl font-bold mb-1 truncate">{title}</h3>
+          <div className="flex flex-row space-x-10"><p className="text-gray-900 mb-2">Tekpon Score</p>
+          <p>{tekponScore}</p></div>
 
           {/* Progress Bar */}
           <div className="w-full bg-gray-200 rounded-full h-3">

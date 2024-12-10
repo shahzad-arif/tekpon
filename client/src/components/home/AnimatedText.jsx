@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 const AnimatedText = () => {
-	const words = ["deals", "tools", "insights", "software"];
+	const words = ["deals", "tools", "insights", "news", "podcasts"];
 	const [currentWordIndex, setCurrentWordIndex] = useState(0);
 	const [currentText, setCurrentText] = useState("");
 	const [isDeleting, setIsDeleting] = useState(false);
