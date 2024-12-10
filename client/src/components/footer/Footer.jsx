@@ -4,7 +4,7 @@ import { socialIcons, menuItems } from "../../text/footerText/footerText";
 const Footer = () => {
 	return (
 		<footer className="bg-white">
-			<div className="mx-auto">
+			<div className="mx-auto py-14">
 				{/* Review Card - New Section */}
 				<div className="flex w-full justify-center px-4 lg:px-20 mb-12">
 					<div className="bg-gradient-to-r from-teal-500 to-purple-700 rounded-lg p-8 text-center  ">
