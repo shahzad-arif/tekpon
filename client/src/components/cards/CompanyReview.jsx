@@ -3,12 +3,12 @@ import React from "react";
 const CompanyReview = ({ data }) => {
   return (
     <div className="p-6 bg-white shadow-xl rounded-lg mx-4 flex flex-col">
-      <div className="flex flex-row items-center justify-center">
+      <div className="flex flex-row items-center justify-center space-x-4">
         <div>
           <img
             src={data.image}
             alt={data.name}
-            className="w-16 h-16 rounded-full mx-auto mb-4"
+            className="w-16 h-16 rounded-full mb-2"
           />
         </div>
         <div>
