@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SoftwareCard from "../cards/SoftwareCard";
 import freshdeskIcon from "/Freshdesk-favicon.webp";
+import { popularCategories } from "../../text/homePageText/homeText";
+import { categorySidebarItems } from "../../text/homePageText/homeText";
 
 const PopularSoftwareCategories = () => {
 	const [activeIndex, setActiveIndex] = useState(null);
@@ -9,50 +11,6 @@ const PopularSoftwareCategories = () => {
 			? categorySidebarItems[activeIndex]
 			: "Help Desk"; // Default if no category is selected
 	};
-
-	const categories = [
-		{
-			icon: freshdeskIcon,
-			title: "Freshdesk",
-			tekponScore: 9.2,
-		},
-		{
-			icon: freshdeskIcon,
-			title: "Freshdesk",
-			tekponScore: 9.1,
-		},
-		{
-			icon: freshdeskIcon,
-			title: "Freshdesk",
-			tekponScore: 9.0,
-		},
-		{
-			icon: freshdeskIcon,
-			title: "Freshdesk",
-			tekponScore: 6,
-		},
-		{
-			icon: freshdeskIcon,
-			title: "Freshdesk",
-			tekponScore: 9.2,
-		},
-		{
-			icon: freshdeskIcon,
-			title: "Freshdesk",
-			tekponScore: 9.1,
-		},
-	];
-
-	const categorySidebarItems = [
-		"CRM",
-		"Field Service Management",
-		"Help Desk",
-		"Inventory Management",
-		"Landing Page",
-		"Payroll",
-		"Project Management",
-		"Subscription Management",
-	];
 
 	return (
 		<div className=" bg-gray-100 py-8 md:py-12">
@@ -86,7 +44,7 @@ const PopularSoftwareCategories = () => {
 					{/* Grid */}
 					<div className="w-full lg:w-auto">
 						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-							{categories.map((category, index) => (
+							{popularCategories.map((category, index) => (
 								<SoftwareCard
 									key={index}
 									icon={category.icon}
