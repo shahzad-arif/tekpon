@@ -17,7 +17,7 @@ const Navbar = () => {
 			<div className="container">
 				<div className="flex justify-between items-center h-16">
 					{/* Desktop Navigation */}
-					<div className="hidden lg:flex items-center space-x-8">
+					<div className="hidden xl:flex items-center space-x-8">
 						<div className="flex-shrink-0">
 							<div className="w-52 rounded-lg mb-1 flex items-center justify-center">
 								<img src="/SoftwareCoverage.webp" alt="SoftwareCoverage" />
@@ -98,7 +98,7 @@ const Navbar = () => {
 					</div>
 
 					{/* Search, Get Listed, and Sign Up buttons */}
-					<div className="hidden lg:flex items-center gap-6">
+					<div className="hidden xl:flex items-center gap-6">
 						<div className="relative">
 							<input
 								type="text"
@@ -118,7 +118,7 @@ const Navbar = () => {
 					</div>
 
 					{/* Mobile menu button */}
-					<div className="lg:hidden w-full">
+					<div className="xl:hidden w-full">
 						<div className="flex justify-between">
 							<div className="flex-shrink-0">
 								<div className="w-52 rounded-lg mb-1 flex items-center justify-center">
@@ -142,7 +142,7 @@ const Navbar = () => {
 
 			{/* Mobile menu */}
 			{isMenuOpen && (
-				<div className="md:hidden">
+				<div className="xl:hidden">
 					<div className="px-2 pt-2 pb-3 space-y-1">
 						<div className="space-y-1">
 							<button
