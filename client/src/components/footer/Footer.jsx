@@ -29,12 +29,16 @@ const Footer = () => {
 				</div>
 
 				{/* Menu sections */}
-				<div className="grid grid-cols-1 md:grid-cols-10 mb-12 md:mx-20">
+				<div className="grid grid-cols-1 md:grid-cols-10 mx-2 mb-12 md:mx-20 ">
 					{/* Top section with logo and address */}
 					<div className="col-span-1 md:col-span-4 flex flex-col items-center mb-8 md:mb-0">
 						<div className="mb-4 flex flex-col justify-center md:justify-start">
 							<div className="mb-4">
-								<img src="/SoftwareCoverage.webp" alt="Tekpon" className="h-8" />
+								<img
+									src="/SoftwareCoverage.webp"
+									alt="Tekpon"
+									className="h-8"
+								/>
 							</div>
 
 							<address className="not-italic text-gray-600 md:text-left">

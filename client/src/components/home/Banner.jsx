@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { Search } from "lucide-react";
 import AnimatedText from "./AnimatedText";
 
@@ -6,7 +5,7 @@ const Banner = () => {
 	return (
 		<section className="bg-gradient-to-br from-white to-blue-50 min-h-screen flex flex-col justify-center items-center px-4 py-2 text-center">
 			{/* Logo */}
-			<div className="mb-6">
+			<div className="mb-6  self-center">
 				<img
 					src="/SoftwareCoverage.webp"
 					alt="SoftwareCoverage"
@@ -16,8 +15,8 @@ const Banner = () => {
 
 			{/* Heading */}
 			<h1
-				className="text-5xl font-bold text-[#211F20]
-           leading-tight"
+				className="text-5xl font-bold text-[#211F20] mb-6  text-center
+           leading-tight "
 			>
 				Find the right software <AnimatedText /> <br />
 				for your business
