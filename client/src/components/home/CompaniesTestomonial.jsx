@@ -4,8 +4,35 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import CompanyReview from "../cards/CompanyReview";
+import { ArrowLeft,ArrowRight } from "lucide-react";
 
 const CompaniesTestimonial = () => {
+  const slider = React.useRef(null);
+  const simpleNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      >
+        Next
+      </div>
+    );
+  };
+  
+  const simplePrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "green" }}
+        onClick={onClick}
+      >
+        BACK
+      </div>
+    );
+  };
   const data = [
     {
       image: "https://via.placeholder.com/150",
@@ -25,12 +52,13 @@ const CompaniesTestimonial = () => {
   ];
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: true, // Includes left and right arrows
+    nextArrow: <simpleNextArrow />,
+    prevArrow: <simplePrevArrow />,
+  
   };
 
   return (
@@ -40,14 +68,31 @@ const CompaniesTestimonial = () => {
           See why thousands of <br />
           companies love Software Coverage
         </h2>
-        <Slider {...settings}>
+        <Slider
+        ref={slider}
+         {...settings}>
           {data.map((review, index) => (
             <div key={index}>
               <CompanyReview data={review} />
             </div>
           ))}
         </Slider>
+      <div className="flex flex-row items-center justify-center mt-6">
+      <button
+          onClick={() => slider?.current?.slickPrev()}
+          className="btn py-1 px-3 rounded-lg ml-5 bg-white border border-gray-300"
+        >
+        <ArrowLeft />
+        </button>
+        <button
+          onClick={() => slider?.current?.slickNext()}
+          className="btn py-1 px-3 rounded-lg ml-5 bg-white border border-gray-300"
+        >
+          <ArrowRight />
+        </button>
       </div>
+      </div>
+     
     </div>
   );
 };
