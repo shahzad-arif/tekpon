@@ -1,8 +1,6 @@
 import { useState } from "react";
 
 const TrustedOrganizations = () => {
-	const [hoveredIndex, setHoveredIndex] = useState(-1);
-
 	const organizations = [
 		{
 			name: "Google Cloud",
@@ -19,17 +17,20 @@ const TrustedOrganizations = () => {
 	];
 
 	return (
-		<div className="container mt-20 mb-20">
+		<div className="container mt-20 mb-20 mx-auto px-4">
+			{/* Heading */}
 			<div className="text-center text-3xl text-gray-800">
 				<p>Trusted by the world’s leading organizations</p>
 			</div>
-			<div className="flex flex-col md:flex-row justify-center items-center space-x-8 my-8">
+
+			{/* Organizations */}
+			<div className="flex flex-wrap justify-center items-center gap-8 my-8 xl:gap-12">
 				{organizations.map((org) => (
 					<div key={org.name} className="flex flex-col items-center my-4">
 						<img
 							src={org.icon}
 							alt={org.name}
-							className="h-8 w-auto transition-all duration-300 grayscale hover:grayscale-0"
+							className="h-8 w-auto transition-all duration-300 grayscale hover:grayscale-0 xl:h-10"
 						/>
 					</div>
 				))}
