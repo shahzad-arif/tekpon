@@ -13,8 +13,8 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="w-full bg-white px-2 ">
-			<div className="container">
+		<nav className="w-full bg-white px-2 lg:px-2 2xl:px-6 ">
+			<div className="">
 				<div className="flex justify-between items-center h-16">
 					{/* Desktop Navigation */}
 					<div className="hidden xl:flex items-center space-x-8">
