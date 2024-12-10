@@ -21,7 +21,7 @@
   @apply border-t border-black my-4;
 }
 .navBarText {
-  @apply text-[30.4px];
+	@apply text-[30.4px];
 }
 
 .searchBar {
