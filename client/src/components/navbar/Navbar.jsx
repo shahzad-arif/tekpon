@@ -13,14 +13,14 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="w-full bg-white px-4 ">
+		<nav className="w-full bg-white px-2 ">
 			<div className="container">
 				<div className="flex justify-between items-center h-16">
 					{/* Desktop Navigation */}
 					<div className="hidden lg:flex items-center space-x-8">
 						<div className="flex-shrink-0">
 							<div className="w-52 rounded-lg mb-1 flex items-center justify-center">
-							<img src="/SoftwareCoverage.webp" alt="SoftwareCoverage" />
+								<img src="/SoftwareCoverage.webp" alt="SoftwareCoverage" />
 							</div>
 						</div>
 						<div className="relative group">
