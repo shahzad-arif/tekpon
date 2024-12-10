@@ -35,9 +35,9 @@ const Footer = () => {
 						<div className="mb-4 flex flex-col justify-center md:justify-start">
 							<div className="mb-4">
 								<img
-									src="/SoftwareCoverage.webp"
+									src="/SoftwareCoverage.png"
 									alt="Tekpon"
-									className="h-8"
+									className="h-9"
 								/>
 							</div>
 
@@ -72,14 +72,14 @@ const Footer = () => {
 				</div>
 
 				{/* Demo section */}
-				<div className="bg-black flex flex-col md:flex-row items-center justify-center py-8 border-t border-b border-gray-200">
+				<div className="bg-[#31478A] flex flex-col md:flex-row items-center justify-center py-8 border-t border-b border-gray-200">
 					<div className="flex items-center mb-4 md:mb-0 mx-2">
 						<img src="/Boopos-white.svg" alt="Boopos" className="h-8 mr-4" />
 						<span className="text-lg text-white">
 							Are you looking to exit your business?
 						</span>
 					</div>
-					<button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 border border-white">
+					<button className="bg-[#1B274A] text-white px-6 py-2 rounded-md hover:bg-[#31478A] border border-white">
 						Get Demo
 					</button>
 				</div>
@@ -87,7 +87,7 @@ const Footer = () => {
 				{/* Bottom section */}
 				<div className="flex flex-col md:flex-row justify-around items-center pt-8">
 					<p className="text-gray-600 mb-4 md:mb-0">
-						© 2020 - 2024 Tekpon | All rights reserved
+						© 2020 - 2024 Software Coverage | All rights reserved
 					</p>
 					<div className="flex space-x-4">
 						{socialIcons.map((icon) => (
