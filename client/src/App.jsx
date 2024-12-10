@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import Banner from "./components/home/Banner";
 import Awards from "./components/home/Awards";
 import TrustedOrganizations from "./components/home/TrustedOrganizaitons";
+import PopularSoftwareCategories from "./components/home/PopularSoftwareCategories";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
 			<Navbar />
 			<Banner />
 			<TrustedOrganizations/>
+			<PopularSoftwareCategories/>
 			<Awards />
 			<Footer />
 		</>
