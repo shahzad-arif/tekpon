@@ -34,11 +34,7 @@ const Footer = () => {
 					<div className="col-span-1 md:col-span-4 flex flex-col items-center mb-8 md:mb-0">
 						<div className="mb-4 flex flex-col justify-center md:justify-start">
 							<div className="mb-4">
-								<img
-									src="/SoftwareCoverage.png"
-									alt="Tekpon"
-									className="h-9"
-								/>
+								<img src="/SoftwareCoverage.png" alt="Tekpon" className="h-9" />
 							</div>
 
 							<address className="not-italic text-gray-600 md:text-left">
@@ -72,14 +68,14 @@ const Footer = () => {
 				</div>
 
 				{/* Demo section */}
-				<div className="bg-[#31478A] flex flex-col md:flex-row items-center justify-center py-8 border-t border-b border-gray-200">
+				<div className=" bg-teal-500 flex flex-col md:flex-row items-center justify-center py-8 border-t border-b border-gray-200">
 					<div className="flex items-center mb-4 md:mb-0 mx-2">
 						<img src="/Boopos-white.svg" alt="Boopos" className="h-8 mr-4" />
 						<span className="text-lg text-white">
 							Are you looking to exit your business?
 						</span>
 					</div>
-					<button className="bg-[#1B274A] text-white px-6 py-2 rounded-md hover:bg-[#31478A] border border-white">
+					<button className="bg-white text-teal-500 px-6 py-2 rounded-md hover:bg-[#31478A] border border-white">
 						Get Demo
 					</button>
 				</div>
