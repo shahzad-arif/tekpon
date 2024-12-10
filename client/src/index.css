@@ -27,14 +27,27 @@
 .dropdownText {
 	@apply block px-4 py-2 text-xl text-gray-700 hover:bg-gray-50 hover:text-indigo-600;
 }
+
 .navbarBtnEndWithGradient {
-	@apply px-6 py-2.5 text-lg text-white rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:opacity-90 transition-opacity duration-200;
-}
+	@apply px-6 py-2.5 text-lg font-extrabold text-white rounded-lg hover:opacity-90 transition-opacity duration-200;
+	background: linear-gradient(90deg, rgba(5, 247, 148, 1) 0%, rgba(17, 139, 214, 1) 100%);
+  }
+  
 
 .navbarBtnIndigo {
-	@apply px-6 py-2.5 text-lg text-indigo-600 hover:text-gray-900  border border-gray-300 hover:border-gray-400 rounded-lg transition-colors duration-200;
+	@apply px-6 py-2.5 text-lg text-[] hover:text-gray-900  border border-gray-300 hover:border-gray-400 rounded-lg transition-colors duration-200;
 }
 
 .searchBar {
 	@apply w-64 px-4 py-2 rounded-xl border border-black focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder:text-xl;
 }
+
+.text-custom-gradient {
+	background: linear-gradient(90deg, rgba(5, 247, 148, 1) 0%, rgba(17, 139, 214, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  
+  .color-custom-gradient{
+	background: linear-gradient(90deg, rgba(5, 247, 148, 1) 0%, rgba(17, 139, 214, 1) 100%);
+  }

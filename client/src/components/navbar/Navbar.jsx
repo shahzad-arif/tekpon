@@ -19,8 +19,8 @@ const Navbar = () => {
 					{/* Desktop Navigation */}
 					<div className="hidden lg:flex items-center space-x-8">
 						<div className="flex-shrink-0">
-							<div className="h-16 w-16 rounded-lg flex items-center justify-center">
-								<img src="/Tekpon-Favicon.svg" alt="Tekpon" />
+							<div className="w-52 rounded-lg mb-1 flex items-center justify-center">
+							<img src="/SoftwareCoverage.webp" alt="SoftwareCoverage" />
 							</div>
 						</div>
 						<div className="relative group">
@@ -121,8 +121,8 @@ const Navbar = () => {
 					<div className="lg:hidden w-full">
 						<div className="flex justify-between">
 							<div className="flex-shrink-0">
-								<div className="h-16 w-16 rounded-lg flex items-center justify-center">
-									<img src="/Tekpon-Favicon.svg" alt="Tekpon" />
+								<div className="w-52 rounded-lg mb-1 flex items-center justify-center">
+									<img src="/SoftwareCoverage.webp" alt="SoftwareCoverage" />
 								</div>
 							</div>
 							<button
