@@ -2,7 +2,7 @@ import React from "react";
 
 const Awards = () => {
 	return (
-		<div className="container">
+		<div className="mb-14">
 			<div className="relative bg-gradient-to-b from-blue-600 to-indigo-800 py-16 px-4 min-h-[600px] flex flex-col items-center justify-center text-white text-center">
 				{/* Decorative Laurels */}
 				<div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl">
@@ -27,7 +27,7 @@ const Awards = () => {
 					{/* Title and Year */}
 					<div className="mb-8">
 						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-							Tekpon Awards
+							Software Coverage
 						</h1>
 						<div className="inline-block bg-orange-300 px-6 py-2 rounded-lg">
 							<span className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">

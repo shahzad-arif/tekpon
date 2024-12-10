@@ -4,7 +4,7 @@ import { socialIcons, menuItems } from "../../text/footerText/footerText";
 const Footer = () => {
 	return (
 		<footer className="bg-white">
-			<div className="container">
+			<div>
 				{/* Review Card - New Section */}
 				<div className="flex w-full justify-center px-4 md:px-20 mb-12">
 					<div className="bg-gradient-to-r from-teal-500 to-purple-700 rounded-lg p-8 text-center  ">
@@ -34,7 +34,7 @@ const Footer = () => {
 					<div className="col-span-1 md:col-span-4 flex flex-col items-center mb-8 md:mb-0">
 						<div className="mb-4 flex flex-col justify-center md:justify-start">
 							<div className="mb-4">
-								<img src="/tekpon-r.webp" alt="Tekpon" className="h-8" />
+								<img src="/SoftwareCoverage.webp" alt="Tekpon" className="h-8" />
 							</div>
 
 							<address className="not-italic text-gray-600 md:text-left">
