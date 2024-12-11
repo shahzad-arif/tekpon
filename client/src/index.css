@@ -5,6 +5,7 @@
 * {
 	scrollbar-width: none;
 	object-fit: contain;
+	overflow-x: hidden;
 }
 
 .container {
