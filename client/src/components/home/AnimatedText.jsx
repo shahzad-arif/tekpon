@@ -37,14 +37,14 @@ const AnimatedText = () => {
 	}, [currentText, isDeleting, currentWordIndex]);
 
 	return (
-		<div className="inline-block w-full sm:w-auto">
-			<span className="relative inline-flex min-w-[80px] sm:min-w-[6.5ch] justify-start">
+		<span className="inline-block w-full lg:w-fit align-top lg:ml-3">
+			<span className="relative inline-flex min-w-[80px] lg:min-w-[6.5ch] align-super">
 				<span className="text-custom-gradient whitespace-nowrap">
 					{currentText}
 					<span className="animate-pulse">|</span>
 				</span>
 			</span>
-		</div>
+		</span>
 	);
 };
 

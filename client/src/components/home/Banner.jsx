@@ -18,7 +18,8 @@ const Banner = () => {
 				className="text-5xl font-bold text-[#211F20] mb-6  text-center
            leading-tight "
 			>
-				Find the right software <AnimatedText /> <br />
+				<span className="inline-block">Find the right software</span>
+				<AnimatedText /> <br />
 				for your business
 			</h1>
 
