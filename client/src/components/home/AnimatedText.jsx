@@ -7,28 +7,24 @@ const AnimatedText = () => {
 	const [isDeleting, setIsDeleting] = useState(false);
 
 	useEffect(() => {
-		const typingSpeed = 60; // Faster typing speed
-		const deletingSpeed = 60; // Faster deleting speed
-		const pauseTime = 4000; // Shorter pause after completing a word
+		const typingSpeed = 60;
+		const deletingSpeed = 60;
+		const pauseTime = 4000;
 
 		const getCurrentWord = () => words[currentWordIndex];
 
 		const timeoutId = setTimeout(
 			() => {
 				if (!isDeleting) {
-					// Typing effect
 					if (currentText.length < getCurrentWord().length) {
 						setCurrentText(getCurrentWord().slice(0, currentText.length + 1));
 					} else {
-						// Pause before starting to delete
 						setTimeout(() => setIsDeleting(true), pauseTime);
 					}
 				} else {
-					// Deleting effect
 					if (currentText.length > 0) {
 						setCurrentText(getCurrentWord().slice(0, currentText.length - 1));
 					} else {
-						// Move to the next word and start typing
 						setIsDeleting(false);
 						setCurrentWordIndex((prev) => (prev + 1) % words.length);
 					}
@@ -41,12 +37,14 @@ const AnimatedText = () => {
 	}, [currentText, isDeleting, currentWordIndex]);
 
 	return (
-		<span className="relative  md:min-w-[6.5ch] justify-start inline-flex  ">
-			<span className="text-custom-gradient whitespace-nowrap">
-				{currentText}
-				<span className="animate-pulse">|</span>
+		<div className="inline-block w-full sm:w-auto">
+			<span className="relative inline-flex min-w-[80px] sm:min-w-[6.5ch] justify-start">
+				<span className="text-custom-gradient whitespace-nowrap">
+					{currentText}
+					<span className="animate-pulse">|</span>
+				</span>
 			</span>
-		</span>
+		</div>
 	);
 };
 
