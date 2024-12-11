@@ -3,7 +3,7 @@ import React from "react";
 const CompanyReview = ({ data }) => {
 	return (
 		<div className="p-6 bg-white shadow-xl rounded-lg mx-4 flex flex-col">
-			<div className="flex flex-col sm:flex-row items-center justify-center space-x-4">
+			<div className="flex flex-col md:flex-row items-center justify-center space-x-4">
 				<div>
 					<img
 						src={data.image}
