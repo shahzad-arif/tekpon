@@ -24,7 +24,7 @@ const PopularSoftwareCategories = () => {
 				<div className="flex flex-col lg:flex-row items-start justify-center space-y-6 lg:space-y-0 lg:space-x-6">
 					{/* Sidebar */}
 					<div className="w-full lg:w-[40%] bg-gray-100  ">
-						<ul className="grid md:grid-cols-2 lg:grid-cols-1 gap-2 py-4">
+						<ul className="grid grid-cols-2 lg:grid-cols-1 gap-2 py-4">
 							{categorySidebarItems.map((item, index) => (
 								<li
 									key={index}
