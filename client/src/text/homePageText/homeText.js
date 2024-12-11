@@ -12,9 +12,9 @@ const categories = [
 
 const faqs = [
 	{
-		question: "What is Tekpon?",
+		question: "What is Software Coverage?",
 		answer:
-			"Tekpon is a platform designed to help businesses find the best software solutions by summarizing reviews from real users.",
+			"Software Coverage is a platform designed to help businesses find the best software solutions by summarizing reviews from real users.",
 	},
 	{
 		question: "How to find the best software for your business?",
@@ -22,9 +22,9 @@ const faqs = [
 			"You can explore categories, read expert reviews, and compare software features to make an informed decision.",
 	},
 	{
-		question: "How can Tekpon help you grow your SaaS?",
+		question: "How can Software Coverage help you grow your SaaS?",
 		answer:
-			"Tekpon offers insights, user reviews, and tools that help SaaS businesses improve visibility and target the right audience.",
+			"Software Coverage offers insights, user reviews, and tools that help SaaS businesses improve visibility and target the right audience.",
 	},
 ];
 const popularCategories = [
@@ -70,4 +70,28 @@ const categorySidebarItems = [
 	"Project Management",
 	"Subscription Management",
 ];
-export { categories, faqs, popularCategories, categorySidebarItems };
+
+const compantTestomonialdata = [
+	{
+		image: "https://via.placeholder.com/150",
+		name: "Stefan Smulders",
+		title: "Chief Strategy Officer & Co-Founder @ EXPAND.IO",
+		quote:
+			"Thanks to Software Coverage, our software has been spotlighted. It's about more than recognition — it's the qualitative feedback and the targeted audience that have made a difference. It feels as though our growth is in sync, a true win-win situation.",
+	},
+	{
+		image: "https://via.placeholder.com/150",
+		name: "Michael Kamleitner",
+		title: "CEO & Founder @ WALLS.IO",
+		quote:
+			"78% of B2B software purchases are decided based on recommendations from existing customers! Software Coverage unlocks the buying process with authentic, up-to-date customer reviews and brings Walls.io in front of qualified leads.",
+	},
+	// Add more objects as needed
+];
+export {
+	categories,
+	faqs,
+	popularCategories,
+	categorySidebarItems,
+	compantTestomonialdata,
+};

@@ -5,27 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import CompanyReview from "../cards/CompanyReview";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { compantTestomonialdata } from "../../text/homePageText/homeText";
 
 const CompaniesTestimonial = () => {
 	const slider = React.useRef(null);
-
-	const data = [
-		{
-			image: "https://via.placeholder.com/150",
-			name: "Stefan Smulders",
-			title: "Chief Strategy Officer & Co-Founder @ EXPAND.IO",
-			quote:
-				"Thanks to Tekpon, our software has been spotlighted. It's about more than recognition — it's the qualitative feedback and the targeted audience that have made a difference. It feels as though our growth is in sync, a true win-win situation.",
-		},
-		{
-			image: "https://via.placeholder.com/150",
-			name: "Michael Kamleitner",
-			title: "CEO & Founder @ WALLS.IO",
-			quote:
-				"78% of B2B software purchases are decided based on recommendations from existing customers! Tekpon unlocks the buying process with authentic, up-to-date customer reviews and brings Walls.io in front of qualified leads.",
-		},
-		// Add more objects as needed
-	];
 
 	const settings = {
 		infinite: true,
@@ -66,7 +49,7 @@ const CompaniesTestimonial = () => {
 					companies love Software Coverage
 				</h2>
 				<Slider ref={slider} {...settings}>
-					{data.map((review, index) => (
+					{compantTestomonialdata.map((review, index) => (
 						<div key={index}>
 							<CompanyReview data={review} />
 						</div>
