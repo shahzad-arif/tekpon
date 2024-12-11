@@ -37,10 +37,10 @@ const SoftwareCard = ({ icon, title, tekponScore, activeIndex, index }) => {
 					</h3>
 
 					{/* Score Container */}
-					<div className="flex items-center justify-between mb-3">
-						<span className="text-gray-900 text-sm">Tekpon Score</span>
+					<div className="flex items-center justify-between mb-3 space-x-4">
+						<span className="text-gray-900 text-sm">Software Score</span>
 						<span className="text-gray-900 text-sm font-medium">
-							{tekponScore}/10
+							{tekponScore}
 						</span>
 					</div>
 
