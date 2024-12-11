@@ -75,7 +75,7 @@ const Footer = () => {
 							Are you looking to exit your business?
 						</span>
 					</div>
-					<button className="bg-white text-teal-500 px-6 py-2 rounded-md hover:bg-[#31478A] border border-white">
+					<button className="bg-white text-teal-500 px-6 py-2 rounded-md hover:bg-gray-300 border border-white">
 						Get Demo
 					</button>
 				</div>

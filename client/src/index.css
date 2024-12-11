@@ -4,7 +4,7 @@
 
 * {
 	scrollbar-width: none;
-	/* object-fit: "contain"; */
+	object-fit: "contain";
 }
 
 .container {
