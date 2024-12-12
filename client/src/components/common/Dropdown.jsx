@@ -30,7 +30,9 @@ const Dropdown = ({ title, items = [], isActive, onToggle }) => {
 			{/* Dropdown Content */}
 			{isActive && (
 				<ul
-					className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 p-4 w-full z-10"
+					className={
+						"absolute left-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 p-4 w-full z-10"
+					}
 					style={{ zIndex: 50 }}
 				>
 					{items.map((item, index) => (
