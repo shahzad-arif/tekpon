@@ -7,7 +7,6 @@ import {
 	fetchCategories,
 	fetchSubcategories,
 } from "../../store/slices/categorySlices";
-import NavbarSkeleton from "./NavbarSkeleton";
 const Navbar = () => {
 	const dispatch = useDispatch();
 	const { categories, subcategories, loading, error } = useSelector(
@@ -59,9 +58,7 @@ const Navbar = () => {
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
-	if (!isInitialLoadComplete && loading) {
-		return <NavbarSkeleton />;
-	}
+
 	if (error) {
 		console.error("Navbar Error:", error);
 	}
