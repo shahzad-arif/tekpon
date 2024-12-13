@@ -88,7 +88,7 @@ const SearchBar = () => {
 			{isDropdownVisible && query.length >= 2 && (
 				<div className="absolute top-full left-0 w-full mt-2 bg-transparent   border-gray-200 rounded-lg  z-50 max-h-[300px] overflow-y-auto">
 					{isLoading ? (
-						<div className="p-4 text-center text-black bg-white">
+						<div className="p-4 text-center text-black shadow-lg bg-white">
 							Searching...
 						</div>
 					) : (
@@ -136,7 +136,7 @@ const SearchBar = () => {
 
 							{searchResults.subCategories.length === 0 &&
 								searchResults.softwares.length === 0 && (
-									<div className="p-4 text-center text-black bg-white">
+									<div className="p-4 text-center shadow-lg  text-black bg-white">
 										No results found
 									</div>
 								)}
