@@ -10,7 +10,7 @@ export const fetchCategories = createAsyncThunk(
 	async (_, { rejectWithValue }) => {
 		try {
 			const response = await axios.get(
-				`${BASE_URL}/api/v1/category/get-all-categories`
+				`${BASE_URL}api/v1/category/get-all-categories`
 			);
 			if (response.data.success) {
 				return response.data.data.categories;
@@ -31,7 +31,7 @@ export const fetchSubcategories = createAsyncThunk(
 	async (categoryId, { rejectWithValue }) => {
 		try {
 			const response = await axios.get(
-				`${BASE_URL}/api/v1/sub-category/${categoryId}/get-sub-categories`
+				`${BASE_URL}api/v1/sub-category/${categoryId}/get-sub-categories`
 			);
 			if (response.data.success) {
 				return { categoryId, subCategories: response.data.data.subCategories };
