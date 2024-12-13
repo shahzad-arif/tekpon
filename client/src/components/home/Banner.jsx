@@ -119,8 +119,8 @@ const Banner = () => {
 
 				{isDropdownVisible && query.length >= 2 && (
 					<div
-						style={{ marginLeft: "116px" }} // Width of All Options button
-						className="absolute right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-[80vh] overflow-y-auto w-[calc(100%-116px)]"
+						// Width of All Options button
+						className="absolute ml-0 sm:ml-[116px] right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50  max-h-[80vh] overflow-y-auto  sm:w-[calc(100%-116px)]"
 					>
 						{isLoading ? (
 							<div className="p-4 text-center text-gray-500">Searching...</div>
