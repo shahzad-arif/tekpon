@@ -133,7 +133,7 @@ const Banner = () => {
 									{searchResults.map((software) => (
 										<div
 											key={software._id}
-											className="flex items-center p-4 bg-white border border-gray-100 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-200 cursor-pointer"
+											className="flex items-center p-4 bg-white border border-gray-100 rounded-lg drop-shadow-lg hover:shadow-2xl transition-shadow duration-200 cursor-pointer"
 										>
 											<div className="w-12 h-12 flex-shrink-0 mr-4">
 												<img
