@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from "react";
 import { Search, X } from "lucide-react";
 import { debounce } from "lodash";
 import axios from "axios";
+import AnimatedText from "./AnimatedText";
 
 const Banner = () => {
 	const [query, setQuery] = useState("");
@@ -78,6 +79,7 @@ const Banner = () => {
 
 			<h1 className="text-5xl font-bold text-[#211F20] mb-6 text-center leading-tight">
 				<span className="inline-block">Find the right software</span>
+				<AnimatedText />
 				<br />
 				for your business
 			</h1>
@@ -118,10 +120,7 @@ const Banner = () => {
 				</div>
 
 				{isDropdownVisible && query.length >= 2 && (
-					<div
-						// Width of All Options button
-						className="absolute ml-0 sm:ml-[116px] right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50  max-h-[80vh] overflow-y-auto  sm:w-[calc(100%-116px)]"
-					>
+					<div className="absolute ml-0 sm:ml-[116px] right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg z-50  max-h-[80vh] overflow-y-auto  sm:w-[calc(100%-116px)]">
 						{isLoading ? (
 							<div className="p-4 text-center text-gray-500">Searching...</div>
 						) : (
