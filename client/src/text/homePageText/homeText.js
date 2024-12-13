@@ -73,14 +73,14 @@ const categorySidebarItems = [
 
 const compantTestomonialdata = [
 	{
-		image: "https://via.placeholder.com/150",
+		image: "/avatars/person1.jpeg",
 		name: "Stefan Smulders",
 		title: "Chief Strategy Officer & Co-Founder @ EXPAND.IO",
 		quote:
 			"Thanks to Software Coverage, our software has been spotlighted. It's about more than recognition — it's the qualitative feedback and the targeted audience that have made a difference. It feels as though our growth is in sync, a true win-win situation.",
 	},
 	{
-		image: "https://via.placeholder.com/150",
+		image: "/avatars/person1.jpeg",
 		name: "Michael Kamleitner",
 		title: "CEO & Founder @ WALLS.IO",
 		quote:
