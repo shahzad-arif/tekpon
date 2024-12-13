@@ -3,6 +3,7 @@ import { Menu, X, ChevronDown, ChevronRight, Search } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import NavLink from "./NavLink";
 import DropdownItem from "./DropdownItem";
+import SearchBar from "./SearchBar";
 import {
 	fetchCategories,
 	fetchSubcategories,
@@ -144,15 +145,7 @@ const Navbar = () => {
 
 					{/* Search and CTA Buttons */}
 					<div className="hidden xl:flex items-center gap-6">
-						<div className="relative">
-							<input
-								type="text"
-								placeholder="Search ..."
-								className="w-64 px-4 py-2.5 rounded-xl border border-black focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder:text-gray-500 text-lg"
-								aria-label="Search"
-							/>
-							<Search className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-500" />
-						</div>
+						<SearchBar />
 
 						<div className="lg:h-8 lg:w-px lg:bg-gray-300" aria-hidden="true" />
 
@@ -284,15 +277,7 @@ const Navbar = () => {
 
 						{/* Mobile Search */}
 						<div className="p-3">
-							<div className="relative">
-								<input
-									type="text"
-									placeholder="Search ..."
-									className="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-									aria-label="Search"
-								/>
-								<Search className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
-							</div>
+							<SearchBar />
 						</div>
 
 						{/* Mobile CTA Buttons */}
