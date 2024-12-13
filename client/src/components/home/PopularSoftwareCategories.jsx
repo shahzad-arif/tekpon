@@ -2,6 +2,10 @@ import React from "react";
 import SoftwareCard from "../cards/SoftwareCard";
 import { useSoftwareData } from "../../hooks/useSoftwareData";
 
+const SkeletonLoader = ({ className }) => (
+	<div className={`bg-gray-300 animate-pulse ${className}`} />
+);
+
 const PopularSoftwareCategories = () => {
 	const {
 		popularSubcategories,
@@ -31,7 +35,14 @@ const PopularSoftwareCategories = () => {
 					{/* Popular Subcategories Sidebar */}
 					<div className="w-full lg:w-[40%] bg-gray-100">
 						{isLoadingSubcategories ? (
-							<div className="text-center">Loading categories...</div>
+							<ul className="grid grid-cols-2 lg:grid-cols-1 gap-2 py-4">
+								{Array.from({ length: 6 }).map((_, index) => (
+									<SkeletonLoader
+										key={index}
+										className="h-10 w-full rounded-lg"
+									/>
+								))}
+							</ul>
 						) : (
 							<ul className="grid grid-cols-2 lg:grid-cols-1 gap-2 py-4">
 								{popularSubcategories.map((subcategory) => (
@@ -56,7 +67,18 @@ const PopularSoftwareCategories = () => {
 					{/* Products Section */}
 					<div className="w-full lg:w-[60%]">
 						{isLoadingProducts ? (
-							<div className="text-center">Loading products...</div>
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+								{Array.from({ length: 6 }).map((_, index) => (
+									<div
+										key={index}
+										className="p-4 border rounded-lg bg-white shadow-sm"
+									>
+										<SkeletonLoader className="h-12 w-12 rounded-md mb-4" />
+										<SkeletonLoader className="h-4 w-3/4 mb-2" />
+										<SkeletonLoader className="h-4 w-1/2" />
+									</div>
+								))}
+							</div>
 						) : (
 							<div className="min-h-[400px] flex flex-col">
 								{products?.topSoftware && products.topSoftware.length > 0 ? (
