@@ -92,7 +92,7 @@ const Banner = () => {
 
 			<div className="mt-10 w-full max-w-4xl relative" id="search-container">
 				<div className="flex items-center bg-white shadow-md rounded-lg border border-gray-200 overflow-hidden">
-					<div className="flex items-center bg-blue-600 text-white py-4 px-4 sm:px-6 cursor-pointer">
+					<div className="flex items-center color-custom-gradient text-white py-4 px-4 sm:px-6 cursor-pointer">
 						<span className="font-medium text-sm sm:text-base">Search All</span>
 					</div>
 
