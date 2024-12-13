@@ -93,13 +93,13 @@ const Banner = () => {
 			<div className="mt-10 w-full max-w-4xl relative" id="search-container">
 				<div className="flex items-center bg-white shadow-md rounded-lg border border-gray-200 overflow-hidden">
 					<div className="flex items-center color-custom-gradient text-white py-4 px-4 sm:px-6 cursor-pointer">
-						<span className="font-medium text-sm sm:text-base">Search All</span>
+						<span className="font-medium text-sm sm:text-base">Search </span>
 					</div>
 
 					<div className="flex-grow flex items-center relative">
 						<input
 							type="text"
-							placeholder="Search your Software, Insights, News, Deals, and more..."
+							placeholder="Search your Software"
 							className="w-full px-2 sm:px-4 py-3 text-gray-700 outline-none text-sm sm:text-base"
 							value={query}
 							onChange={handleInputChange}
