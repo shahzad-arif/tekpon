@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 import {
 	fetchCategories,
 	fetchSubcategories,
-} from "../../store/slices/categorySlices";
+} from "../../../../store/slices/categorySlices";
 const Navbar = () => {
 	const dispatch = useDispatch();
 	const { categories, subcategories, loading, error } = useSelector(

@@ -1,5 +1,5 @@
 import React from "react";
-import { socialIcons, menuItems } from "../../text/footerText/footerText";
+import { socialIcons, menuItems } from "../../../../text/footerText/footerText";
 
 const Footer = () => {
 	return (

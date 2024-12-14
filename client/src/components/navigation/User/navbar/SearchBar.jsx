@@ -3,7 +3,7 @@ import { Search } from "lucide-react";
 import { debounce } from "lodash";
 import axios from "axios";
 import NavLink from "./NavLink";
-import { BASE_URL } from "../../url";
+import { BASE_URL } from "../../../../url";
 import { ChevronDown } from "lucide-react";
 
 const SearchBar = () => {
