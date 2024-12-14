@@ -5,6 +5,7 @@ import AdminLayout from "../../layout/admin/AdminLayout";
 import CategoryTable from "../tables/categorytable/CategoryTable";
 import SubcategoryTable from "../tables/subcategorytable/SubcategoryTable";
 import SoftwareTable from "../tables/softwaretable/SoftwareTable";
+import AllCategories from "../../pages/all_categories/AllCategories";
 
 const router = createBrowserRouter([
 	{
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
 			{
 				path: "",
 				element: <Home />,
+			},
+			{
+				path: "categories",
+				element: <AllCategories />,
 			},
 		],
 	},
